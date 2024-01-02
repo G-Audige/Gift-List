@@ -8,7 +8,7 @@ function Show({ giftee }) {
         {giftee.name} has been{' '}
         {giftee.nice ? <span>nice</span> : <span>naughty</span>} this year and
         so will receive{' '}
-        {giftee.nice ? <span>a {giftee.gift}</span> : <span>coal</span>}.
+        {giftee.nice ? <span>a {giftee.gift.toLowerCase()}</span> : <span>coal</span>}.
       </h1>
     </>
   );
