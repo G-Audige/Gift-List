@@ -3,7 +3,16 @@ import React from 'react';
 function Index({ giftees }) {
   return (
     <div>
-      <h1>Gifts</h1>
+      <h1
+        style={{
+          backgroundColor: 'green',
+          color: 'white',
+          padding: '10px',
+          textAlign: 'center',
+        }}
+      >
+        Gifts
+      </h1>
       <a href="/recipients/new">
         <h3>Add a new recipient</h3>
       </a>
@@ -50,7 +59,7 @@ function Index({ giftees }) {
                       href={`/recipients/${giftee.id}`}
                       style={{
                         fontWeight: 'bold',
-                        fontSize: '18px',
+                        fontSize: '16px',
                         textDecoration: 'none',
                         color: 'red',
                       }}
